@@ -3,7 +3,7 @@ main {
     background-color: rgb(225, 217, 217);
 }
 
-#PLlogo {
+#pl-logo{
    /* Parallax effect */ 
     background-image: url("../images/PLlogoQuality.jpg");
     background-size: 500px;
@@ -79,7 +79,7 @@ h1, h2 {
 /*Need to adjust size of specific image to avoid stretching */
 
 @media screen and (min-width:475px) {
-    #PLlogo {
+    #pl-logo{
         background-size: 700px;
         min-height: 200px;
     }
@@ -90,7 +90,7 @@ h1, h2 {
         margin: 0px 90px 40px 90px;
         font-size: 16px;
     }
-    #PLlogo {
+    #pl-logo{
         background-size: 1000px;
         min-height: 295px;
     }
@@ -131,7 +131,7 @@ h1, h2 {
     main p {
         margin: 0px 150px 40px 150px;
     }
-    #PLlogo {
+    #pl-logo{
         background-size: 1200px;
         min-height: 330px;
         background-position: center 56px;
@@ -155,7 +155,7 @@ h1, h2 {
         grid-column: 1 / span;
         min-height: 410px;
     }
-    #companyFront {
+    #company-front {
         grid-column: 2 / span 2;
     }
     #prop {
@@ -163,7 +163,7 @@ h1, h2 {
         grid-row: 4 / span 2;
         min-height: 410px;
     }
-    #wakeForest {
+    #wake-forest {
         grid-row: 1 / span 2;
         grid-column: 3 / span 2;
         min-height: 410px;   
@@ -172,7 +172,7 @@ h1, h2 {
 
 /*For the Logo at the top*/
 @media screen and (min-width:1200px) {
-    #PLlogo {
+    #pl-logo{
         background-size: 1700px;
         min-height: 400px;
         background-position: center 0px;
@@ -194,7 +194,7 @@ h1, h2 {
 
 /*media queries to shut of parallax if prefers reduced motion, and fix the style in that case */
 @media (prefers-reduced-motion) {
-    #PLlogo {
+    #pl-logo {
         background-attachment: scroll;
         background-position: center 0px;
     }
@@ -211,7 +211,7 @@ h1, h2 {
         background-position: center -250px;
     }
     @media screen and (min-width: 1200px) {
-        #PLlogo {
+        #pl-logo{
             background-position: center -60px;
         }
     }

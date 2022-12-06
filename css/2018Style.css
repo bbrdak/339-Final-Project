@@ -3,7 +3,7 @@ main {
     background-color: rgb(225, 217, 217);
 }
 
-#SOSLogo {
+#sos-logo {
    /* Parallax effect */ 
     background-image: url("../images/SOSLogoMobile.jpg");
     background-size: 700px;
@@ -13,8 +13,6 @@ main {
     background-attachment: fixed;
 }
 
-
-
 h1, h2 {
     font-size: 20px;
     margin: 20px auto 20px auto;
@@ -23,7 +21,7 @@ h1, h2 {
     letter-spacing: 5px;
 }
 
-#galleryHead {
+#gallery-head {
     margin-top: 30px;
 }
 
@@ -33,7 +31,7 @@ main p {
     font-family: sans-serif;
 }
 
-#DrumsImg {
+#drums-img {
     /* Parallax effect */ 
     background-image: url("../images/SOSDrummerBG.jpg");
     background-size: 700px;
@@ -43,7 +41,7 @@ main p {
     background-attachment: fixed;
 }
 
-#GuardImg {
+#guard-img {
     /* Parallax effect */ 
     background-image: url("../images/SOSGuardBG.jpg");
     background-size: 700px;
@@ -85,16 +83,16 @@ main p {
     #gallery img {
         max-width: 40%;
     }
-    #SOSLogo {
+    #sos-logo {
         background-image: url("../images/SOS.jpg");
         background-size: 1000px;
     }
-    #DrumsImg {
+    #drums-img {
         background-image: url("../images/SOSDrummerBG.jpg");
         background-size: 1000px;
         background-position: center -70px;
     }
-    #GuardImg {
+    #guard-img {
         background-image: url("../images/SOSGuardMD.jpg");
         background-size: 1000px;
     }
@@ -105,21 +103,24 @@ main p {
     #gallery img {
         width: 350px;
     }
+    #gallery {
+        justify-content: space-evenly;
+    }
     main p {
         margin: 0px 170px 40px 170px;
         font-size: 16px;
     }
-    #SOSLogo {
+    #sos-logo {
         background-image: url("../images/SOS.jpg");
         background-size: 1700px;
         background-position: center -100px;
     }
-    #DrumsImg {
+    #drums-img {
         background-image: url("../images/SOSBrian.jpg");
         background-size: 1700px;
         background-position: center -70px;
     }
-    #GuardImg {
+    #guard-img {
         background-image: url("../images/SOSGuard.jpg");
         background-size: 1700px;
     }
@@ -144,20 +145,20 @@ main p {
 }
 
 @media (prefers-reduced-motion) {
-    #SOSLogo {
+    #sos-logo {
         background-attachment: scroll;
         background-position: center 0px;
     }
-    #DrumsImg {
+    #drums-img {
         background-attachment: scroll;
         background-position: center -70px;
     }
-    #GuardImg {
+    #guard-img {
         background-attachment: scroll;
         background-position: center -180px;
     }
     @media screen and (min-width: 950px) {
-        #SOSLogo {
+        #sos-logo {
             background-attachment: scroll;
             background-position: center -180px;
         }
