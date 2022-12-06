@@ -1,0 +1,165 @@
+main {
+    padding-top: 65px;
+    background-color: rgb(225, 217, 217);
+}
+
+#SOSLogo {
+   /* Parallax effect */ 
+    background-image: url("../images/SOSLogoMobile.jpg");
+    background-size: 700px;
+    background-position: center 30px;
+    min-height:375px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+h1, h2 {
+    font-size: 20px;
+    margin: 20px auto 20px auto;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#galleryHead {
+    margin-top: 30px;
+}
+
+main p {
+    margin: 0px 30px 40px 30px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+#DrumsImg {
+    /* Parallax effect */ 
+    background-image: url("../images/SOSDrummerBG.png");
+    background-size: 700px;
+    background-position: center 65px;
+    min-height:375px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#GuardImg {
+    /* Parallax effect */ 
+    background-image: url("../images/SOSGuardBG.jpg");
+    background-size: 700px;
+    background-position: center 65px;
+    min-height:375px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#gallery img {
+    border: 2px solid black;
+    width: 75%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#gallery a {
+    margin: auto;
+}
+/* Tablet View */
+@media screen and (min-width:700px) {
+    main p {
+        margin: 0px 70px 40px 70px;
+        font-size: 16px;
+    }
+    #gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    #gallery img {
+        width: 40%;
+    }
+    #SOSLogo {
+        background-image: url("../images/SOS.jpeg");
+        background-size: 1000px;
+    }
+    #DrumsImg {
+        background-image: url("../images/SOSDrummerBG.png");
+        background-size: 1000px;
+        background-position: center -70px;
+    }
+    #GuardImg {
+        background-image: url("../images/SOSGuardMD.jpg");
+        background-size: 1000px;
+    }
+}
+
+/* Large Screen View */
+@media screen and (min-width:950px) {
+    #gallery img {
+        width: 350px;
+    }
+    main p {
+        margin: 0px 170px 40px 170px;
+        font-size: 16px;
+    }
+    #SOSLogo {
+        background-image: url("../images/SOS.jpeg");
+        background-size: 1700px;
+        background-position: center -100px;
+    }
+    #DrumsImg {
+        background-image: url("../images/SOSBrian.jpg");
+        background-size: 1700px;
+        background-position: center -70px;
+    }
+    #GuardImg {
+        background-image: url("../images/SOSGuard.jpg");
+        background-size: 1700px;
+    }
+}
+
+/* Extra media query to adjust margins and font size on larger screens */
+@media screen and (min-width: 1100px) {
+    main p {
+        margin: 0px 300px 40px 300px;
+        font-size: 18px;
+    }
+    h1, h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    main p {
+        margin: 0px 400px 40px 400px;
+        font-size: 18px;
+    }
+}
+
+@media (prefers-reduced-motion) {
+    #SOSLogo {
+        background-attachment: scroll;
+        background-position: center 0px;
+    }
+    #DrumsImg {
+        background-attachment: scroll;
+        background-position: center -70px;
+    }
+    #GuardImg {
+        background-attachment: scroll;
+        background-position: center -180px;
+    }
+    @media screen and (min-width: 950px) {
+        #SOSLogo {
+            background-attachment: scroll;
+            background-position: center -180px;
+        }
+    }
+}

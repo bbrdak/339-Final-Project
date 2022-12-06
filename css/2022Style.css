@@ -1,0 +1,220 @@
+main {
+    padding-top: 65px;
+    background-color: rgb(225, 217, 217);
+}
+
+#PLlogo {
+   /* Parallax effect */ 
+    background-image: url("../images/PLlogoQuality.jpg");
+    background-size: 500px;
+    background-position: center 54px;
+    min-height: 160px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#cfbackground {
+    /* Parallax effect */ 
+     background-image: url("../images/22CompanyFront.jpg");
+     background-size: 1550px;
+     background-position: center 50px;
+     min-height: 300px;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+ }
+
+#drumbackground {
+   /* Parallax effect */ 
+    background-image: url("../images/22Drumline.jpg");
+    background-size: 2100px;
+    background-position: center 68px;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#propbackground {
+    /* Parallax effect */ 
+    background-image: url("../images/22Photoshoot.jpg");
+    background-size: 1150px;
+    background-position: center 68px;
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main p {
+    margin: 0px 30px 40px 30px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+
+h1, h2 {
+    font-size: 20px;
+    margin: 20px auto 20px auto;
+    font-family: sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    row-gap: 10px;
+    padding-bottom: 10px;
+}
+
+#gallery img{
+    display:block;
+    box-sizing: border-box;
+    max-height: 250px;
+    max-width: 95%;
+    border: 2px solid black
+}
+
+/*Need to adjust size of specific image to avoid stretching */
+
+@media screen and (min-width:475px) {
+    #PLlogo {
+        background-size: 700px;
+        min-height: 200px;
+    }
+}
+/* Tablet View */
+@media screen and (min-width:700px) {
+    main p {
+        margin: 0px 90px 40px 90px;
+        font-size: 16px;
+    }
+    #PLlogo {
+        background-size: 1000px;
+        min-height: 295px;
+    }
+    #gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #gallery img {
+        height: 200px;
+    }
+    #bryce {
+        grid-row: 3 / span 2;
+        min-height: 410px;
+    }
+    #guard {
+        grid-row: 5 / span 2;
+        grid-column: 2;
+        min-height: 410px;
+    }
+ }
+
+/*Large Screen View */
+@media screen and (min-width:1000px) {
+    #cfbackground {
+        /* Parallax effect */ 
+         background-size: 1900px;
+         min-height: 400px;
+     }
+      
+    #propbackground {
+        /* Parallax effect */ 
+        background-size: 1900px;
+        background-position: center -50px;
+        min-height: 400px;
+    }
+    
+    main p {
+        margin: 0px 150px 40px 150px;
+    }
+    #PLlogo {
+        background-size: 1200px;
+        min-height: 330px;
+        background-position: center 56px;
+    }
+    #gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        max-width: 1125px;
+        margin: auto;
+    }
+    #drums {
+        grid-column: 1 / span 2;
+    }
+    #guard {
+        grid-row: 4 / span 2;
+        grid-column: 4;
+        min-height: 410px;
+    }
+    #bryce {
+        grid-row: 3 / span 2;
+        grid-column: 1 / span;
+        min-height: 410px;
+    }
+    #companyFront {
+        grid-column: 2 / span 2;
+    }
+    #prop {
+        grid-column: 2 / span 2;
+        grid-row: 4 / span 2;
+        min-height: 410px;
+    }
+    #wakeForest {
+        grid-row: 1 / span 2;
+        grid-column: 3 / span 2;
+        min-height: 410px;   
+    }
+}
+
+/*For the Logo at the top*/
+@media screen and (min-width:1200px) {
+    #PLlogo {
+        background-size: 1700px;
+        min-height: 400px;
+        background-position: center 0px;
+    }
+    main p {
+        margin: 0px 300px 40px 300px;
+        font-size: 18px;
+    }
+    h1, h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main p {
+        margin: 0px 400px 40px 400px;
+    }
+}
+
+/*media queries to shut of parallax if prefers reduced motion, and fix the style in that case */
+@media (prefers-reduced-motion) {
+    #PLlogo {
+        background-attachment: scroll;
+        background-position: center 0px;
+    }
+    #cfbackground {
+        background-attachment: scroll;
+        background-position: center -450px;
+    }
+    #drumbackground {
+        background-attachment: scroll;
+        background-position: center -200px;
+    }
+    #propbackground {
+        background-attachment: scroll;
+        background-position: center -250px;
+    }
+    @media screen and (min-width: 1200px) {
+        #PLlogo {
+            background-position: center -60px;
+        }
+    }
+}
+
+ 

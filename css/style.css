@@ -1,0 +1,209 @@
+/* CSS for the navbar*/
+header {
+    background-color: rgb(161, 156, 156);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0fr 160px;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.tablet {
+    display:none;
+}
+
+.menuButton {
+    height: 72px;
+}
+
+.menuButton img {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.dropdown {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    background-color: rgb(161, 156, 156);
+    padding: 12px 16px;
+    z-index: 1000;
+    
+}
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.menuButton:hover .dropdown {
+    display: block;
+}
+
+header img {
+    height: 50px;
+    position:relative;
+    top: 10px;
+    left: 10px;
+}
+
+@media screen and (min-width:700px) {
+    .menuButton {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .tablet {
+        display: block;
+        text-decoration: none;
+        color: Black;   
+        padding: 21px 16px;
+        text-align: center;
+        font-size: 21px;
+    } 
+}
+
+
+.icon {
+    grid-column: 5;
+    background-image: url("../images/BACLogo.png");
+}
+
+header a:hover {
+    background-color: rgb(109, 105, 105);
+}
+
+#logo {
+    border: solid 2px black;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.skipToMain {
+    position: absolute;
+    top: -1000px;
+    padding: 10px;
+    z-index: 10;
+    background-color: white;
+    text-decoration: none;
+}
+
+/* This is to anchor the navbar above the main content when we skip */
+.container {
+    position: relative;
+}
+
+.target {
+    position: absolute;
+    top: -80px;
+}
+
+.skipToMain:focus {
+    top: 10px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+/*the css related to the current navbar selection*/
+.selected {
+    border: 3px solid black;
+    background-color: rgb(151, 142, 142) ;
+}
+
+
+footer {
+    background-color: rgb(161, 156, 156);
+}
+
+#footerGrid {
+    display:grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+#insta {
+    grid-row: 1/span 1;
+    grid-column: 3/span 1;
+}
+
+/* Media Queries for the Footer*/
+@media screen and (min-width: 650px) {
+    footer p {
+        font-size: 15px;
+    }
+
+    #footerGrid {
+        width: 83%
+    }
+}
+
+@media screen and (min-width: 850px) {
+    footer p {
+        font-size: 16.9px;
+    }
+
+    #footerGrid {
+        width: 70%
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    footer p {
+        font-size: 18px;
+    }
+
+    #footerGrid {
+        width: 60%
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    footer p {
+        font-size: 20px;
+    }
+
+    #footerGrid {
+        width: 50%
+    }
+}
+
+/* Media Queries for header at larger sizes */
+@media screen and (min-width: 600px) {
+    header{
+        grid-template-columns: 1fr 1fr 1fr 1fr 160px;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    header{
+        grid-template-columns: 1fr 1fr 1fr 2fr 160px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    header{
+        grid-template-columns: 1fr 1fr 1fr 3fr 160px;
+    }
+}
+
